@@ -15,7 +15,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Run when client connects
 io.on('connection', (socket) => {
-	console.log('New web socket connection...');
+	// Message to welcome initial user
+	socket.emit('message', 'Welcome to node-chat');
+
+	// Broadcast when a user connects
+	socket.broadcast.emit('message', 'A user has joined the chat');
+
+	// Runs when a client disconnects
+	socket.on('disconnect', () => {
+		io.emit('message', 'A user has left the chat');
+	});
+
+	// Listen for chatMessage
+	socket.on('chatMessage', (msg) => {
+		io.emit('message', msg);
+	});
 });
 
 // App listening
