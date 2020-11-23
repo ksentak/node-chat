@@ -1,8 +1,15 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Chat from './components/Chat';
+
 const App = () => {
 	return (
-		<div className='App'>
-			<h1>Hello World</h1>
-		</div>
+		<Router>
+			<Switch>
+				<Route exact path='/' component={Home} />
+				<Route exact path='/chat' component={Chat} />
+			</Switch>
+		</Router>
 	);
 };
 
