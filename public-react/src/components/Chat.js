@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSmile } from '@fortawesome/free-solid-svg-icons';
+import { faComments } from '@fortawesome/free-solid-svg-icons';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import './chat.css';
 
 const Chat = () => {
@@ -5,22 +10,22 @@ const Chat = () => {
 		<div className='chat'>
 			<body>
 				<div className='chat-container'>
-					<header className='chat-header'>
+					<div className='chat-header'>
 						<h1>
-							<i className='fas fa-smile'></i> Node-Chat
+							<FontAwesomeIcon icon={faSmile} /> Node-Chat
 						</h1>
 						<a href='index.html' className='btn'>
 							Leave Room
 						</a>
-					</header>
+					</div>
 					<main className='chat-main'>
 						<div className='chat-sidebar'>
 							<h3>
-								<i className='fas fa-comments'></i> Room Name:
+								<FontAwesomeIcon icon={faComments} /> Room Name:
 							</h3>
-							<h2 id='room-name'></h2>
+							<h2 id='room-name'>Test</h2>
 							<h3>
-								<i className='fas fa-users'></i> Users
+								<FontAwesomeIcon icon={faUsers} /> Users
 							</h3>
 							<ul id='users'></ul>
 						</div>
@@ -36,7 +41,7 @@ const Chat = () => {
 								autocomplete='off'
 							/>
 							<button className='btn'>
-								<i className='fas fa-paper-plane'></i> Send
+								<FontAwesomeIcon icon={faPaperPlane} /> Send
 							</button>
 						</form>
 					</div>

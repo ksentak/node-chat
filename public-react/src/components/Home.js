@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import './home.css';
 
 const Home = () => {
@@ -5,11 +7,11 @@ const Home = () => {
 		<div className='home'>
 			<body>
 				<div className='join-container'>
-					<header className='join-header'>
+					<div className='join-header'>
 						<h1>
-							<i className='fas fa-smile'></i> Node-Chat
+							<FontAwesomeIcon icon={faSmile} /> Node-Chat
 						</h1>
-					</header>
+					</div>
 					<main className='join-main'>
 						<form action='chat.html'>
 							<div className='form-control'>
