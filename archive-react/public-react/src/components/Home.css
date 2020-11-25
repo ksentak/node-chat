@@ -1,4 +1,7 @@
-/* Home Page */
+.home {
+	background: #e6e9ff;
+}
+
 .join-container {
 	max-width: 500px;
 	margin: 80px auto;
@@ -8,14 +11,14 @@
 .join-header {
 	text-align: center;
 	padding: 20px;
-	background: var(--dark-color-a);
+	background: #667aff;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .join-main {
 	padding: 30px 40px;
-	background: var(--dark-color-b);
+	background: #7386ff;
 }
 
 .join-main p {
