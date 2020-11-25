@@ -11,7 +11,7 @@ const Home = () => {
 						<FontAwesomeIcon icon={faSmile} /> Node-Chat
 					</h1>
 				</div>
-				<main className='join-main'>
+				<div className='join-main'>
 					<form action='/chat'>
 						<div className='form-control'>
 							<label for='username'>Username</label>
@@ -35,7 +35,7 @@ const Home = () => {
 							Join Chat
 						</button>
 					</form>
-				</main>
+				</div>
 			</div>
 		</div>
 	);

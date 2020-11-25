@@ -51,4 +51,10 @@
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
+	cursor: pointer;
+	padding: 5px 15px;
+	background: #e6e9ff;
+	color: #667aff;
+	border: 0;
+	font-size: 17px;
 }
