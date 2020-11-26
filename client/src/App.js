@@ -6,7 +6,7 @@ import Chat from './components/Chat';
 // import './App.css';
 
 const App = () => {
-	const [user, setUser] = useState('null');
+	const [user, setUser] = useState(null);
 	return (
 		<>
 			{!user ? (
